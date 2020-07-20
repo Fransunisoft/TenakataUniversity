@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/details_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_name"
+            android:layout_marginTop="10dp"
+            android:text="Age" />
+
+        <TextView
+            android:id="@+id/details_marital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_age"
+            android:layout_marginTop="10dp"
+            android:text="Marital Status" />
+
+        <TextView
+            android:id="@+id/details_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_marital"
+            android:layout_marginTop="10dp"
+            android:text="Height" />
+
+        <TextView
+            android:id="@+id/details_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-50dp"
+            android:text="Kenya" />
+
+
+        <TextView
+            android:id="@+id/details_testsResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_country"
+            android:layout_marginTop="8dp"
+            android:text="IQ Tests Result" />
+
+        <TextView
+            android:id="@+id/details_admissibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_testsResult"
+            android:layout_marginTop="10dp"
+            android:text="Admissibility" />
+
+        <TextView
+            android:id="@+id/status_admissibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_testsResult"
+            android:layout_marginTop="10dp"
+            android:text="Status: " />
+
+        <Button
+            android:id="@+id/save"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Save as PDF" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
